@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@600&display=swap');
+
+.card {
+    font-family: 'Nunito' , sans-serif;
+}
+
+.top-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.weather {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    transform: rotateZ(270deg) translateY(120px);
+}
+
+.city {
+    align-self: flex-end;
+}
+
+.left-card {
+    background: linear-gradient(to right,rgba(255,255,255,1),rgba(255,255,255,0));
+    min-width: 320px ;
+    transform: scale(0.8);
+}
+.left-card > .top-card > .weather {
+    transform: rotateZ(270deg) translateY(100px);
+}
+.right-card {
+    background: linear-gradient(to left,rgba(255,255,255,1),rgba(255,255,255,0));
+    min-width: 320px ;
+    transform: scale(0.8);
+}
+.center-card{
+    min-width: 380px ;
+}
+
